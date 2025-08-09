@@ -1,13 +1,12 @@
 
-@use '../utilities/variables' as v;
-@use '../utilities/mixins'  as m;
+
 
 body {
   font-size: 14px;
 }
 
-main h1,
-main h2,
-main h3 {
-  text-align: center;
+main {
+  h1, h2, h3 {
+    text-align: center;
+  }
 }

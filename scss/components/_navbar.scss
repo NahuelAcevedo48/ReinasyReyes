@@ -1,15 +1,29 @@
-
-@use '../utilities/variables' as v;
-@use '../utilities/mixins'  as m;
-
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
 
 .header-flex {
-  @include flex(row, space-between, center);
-  padding: 10px 20px;
-  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; // logo a la izq, nav a la der
+  align-items: center;
+  padding: $padding-header;
+  background-color: $color-primario;
+}
 
-  @include responsive(tablet) {
+.logo-residencia {
+  width: $width-logo;
+  height: auto;
+}
+
+@media (max-width: $bp-tablet) {
+  .header-flex {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .logo-residencia {
+    width: 100px; 
   }
 }

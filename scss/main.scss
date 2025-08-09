@@ -1,13 +1,6 @@
+@use 'components/footer' as *;
+@use 'components/general' as *;
+@use 'components/navbar' as *;
 
-@use 'utilities/variables';
-@use 'utilities/mixins';
-
-
-@use 'base/reset';
-@use 'base/tipografia';
-
-
-@use 'components/navbar';
-@use 'components/general';
-@use 'components/footer';
-
+@use 'base/reset' as *;
+@use 'base/tipografia' as *;

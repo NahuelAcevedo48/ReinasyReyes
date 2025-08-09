@@ -1,9 +1,26 @@
-// utilities/_mixins.scss
+// _mixins.scss
 
-@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+// Centrar con flexbox
+@mixin flex-center($direction: row) {
   display: flex;
   flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  gap: $gap;
+  align-items: center;
+  justify-content: center;
+}
+
+// Texto truncado con puntos suspensivos
+@mixin truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Media query rápido
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $bp-mobile) { @content; }
+  }
+  @else if $breakpoint == tablet {
+    @media (max-width: $bp-tablet) { @content; }
+  }
 }

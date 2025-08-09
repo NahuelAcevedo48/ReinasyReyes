@@ -1,3 +1,23 @@
-$color-principal: #f8f9fa;
-$color-link: #007bff;
-$color-link-hover: #0056b3;
+
+
+// _variables.scss
+
+// 🎨 Colores globales
+$color-fondo: #f8f9fa;
+$color-primario: #007bff;
+$color-primario-hover: #0056b3;
+$color-texto: #212529;
+
+// 📏 Espaciados comunes
+$padding-footer: 15px;
+$padding-header: 10px 20px;
+$padding-main: 20px;
+$margin-top-section: 20px;
+
+// 📐 Anchos de imágenes y logos
+$width-logo: 150px;
+$width-imagen-servicios: 300px;
+
+// 📱 Breakpoints
+$bp-tablet: 768px;
+$bp-mobile: 480px;

@@ -1,21 +1,20 @@
 
-@use '../utilities/variables' as v;
-@use '../utilities/mixins'  as m;
-
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
 
 footer {
   text-align: center;
-  padding: 15px;
-  background-color: #f8f9fa;
-  margin-top: 20px;
+  padding: $padding-footer;
+  background-color: $color-primario-hover; 
+  margin-top: $margin-top-section;
 
   a {
     margin: 0 10px;
     text-decoration: none;
-    color: #007bff;
+    color: $color-fondo; // antes era beige
 
     &:hover {
-      color: #0056b3;
+      color: $color-primario-hover;
     }
   }
 }
